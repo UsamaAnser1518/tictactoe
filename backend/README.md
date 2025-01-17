@@ -2,6 +2,7 @@
 
 Tic Tac Toe game with scoreboard. 
 React front end, Ruby On Rails REST API backend.
+The frontend component is located in the client folder.
 
 Try it live at: https://obscure-springs-73090.herokuapp.com/
 ![alt text](https://i.imgur.com/ymupNbC.png "Website")
@@ -19,24 +20,23 @@ sudo apt install nodejs -y
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 rvm install 2.5.3
 rvm use ruby-2.5.3
-gem install rails
 ```
 
 ## Running
 * Open two terminal windows, in the first run:
 ```
-git clone https://github.com/MiloTodt/tictactoe.git
-cd tictactoe
-cd backend
+git clone https://github.com/MiloTodt/tictac.git
+cd tictac
+gem install rails
 bundle install
 rake db:setup
 rails server -p 3001
 ```
 ![alt text](https://i.imgur.com/gSktGvX.png "Back")
 
-* In the second terminal, navigate to /tictactoe/frontend
+* In the second terminal, navigate to /tictac/client
 ```
-cd frontend
+cd client
 npm start
 ```
 ![alt text](https://i.imgur.com/Y3v6UwB.png "Front")
